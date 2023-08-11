@@ -1,11 +1,13 @@
-import React, { useContext } from 'react'
-import ThemeContex from '../context/ThemeContext'
+import React from 'react'
+import { useTheme } from '../context/ThemeContext';
+//import ThemeContex from '../context/ThemeContext'
+
 
 function Button() {
-    const data=useContext(ThemeContex); 
+    const data=useTheme(); 
     //console.log(data);
 
-    const {theme, setTheme}=useContext(ThemeContex);
+    const {theme, setTheme}=useTheme();
   return (
     <div>Button<br />
     <div>Active Theme : {data.theme}</div>
