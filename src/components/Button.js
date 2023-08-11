@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import ThemeContex from '../context/ThemeContex'
+import ThemeContex from '../context/ThemeContext'
 
 function Button() {
     const data=useContext(ThemeContex); 
